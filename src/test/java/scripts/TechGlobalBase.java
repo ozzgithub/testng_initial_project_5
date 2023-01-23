@@ -23,6 +23,12 @@ public class TechGlobalBase {
         driver.get(ConfigReader.getProperty("appURL"));
 
         techGlobalBasePage = new TechGlobalBasePage();
+        techGlobalFrontEndPage = new TechGlobalFrontEndPage();
+        techGlobalLoginFormPage = new TechGlobalLoginFormPage();
+
+        techGlobalFrontEndPage.getFrontendTestingPage();
+        techGlobalFrontEndPage.clickOnCard(15);
+
 
 
     }

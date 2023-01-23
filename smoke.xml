@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke">
+    <test name="Critical Functionalities">
+        <classes>
+            <class name="scripts.LoginFormCardTest">
+                <methods>
+                    <include name="validationLoginFormCard"/>
+                </methods>
+            </class>
+
+            <class name="scripts.TechGlobalLoginCardInvalidLoginCredentials">
+            <methods>
+                <include name="validateInvalidWrongUserName"/>
+                <include name="validateInvalidWrongPassword"/>
+                <include name="validateInvalidWrongPasswordAndUserName"/>
+            </methods>
+        </class>
+            <class name="scripts.TechGlobalLoginFormCardValidLogin">
+            <methods>
+                <include name="loginFormValidLogin"/>
+                <include name="loginFormValidLoginAndLogout"/>
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
